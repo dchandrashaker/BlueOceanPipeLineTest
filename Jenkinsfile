@@ -7,5 +7,13 @@ pipeline {
       }
     }
 
+    stage('new stage') {
+      steps {
+        sh '''df -h
+hostname
+ifconfig'''
+      }
+    }
+
   }
 }
